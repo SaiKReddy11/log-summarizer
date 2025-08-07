@@ -4,6 +4,7 @@
 #include <vector> // Include for vector operations
 #include <iostream> // Include for input/output operations
 #include "log_entry.h" // Include the LogEntry struct definition
+#include "ollama_api.h" // Include the Ollama API 
 using json = nlohmann::json; // Use the nlohmann::json namespace for convenience
 
 
@@ -37,6 +38,11 @@ int main(int argc, char* argv[]) { // Main function to handle command line argum
         for (const auto& entry : entries) { // Iterate through the parsed log entries
             std::cout << entry.timestamp << ": " << entry.message << std::endl;
         }
+        // Call Ollama API with the parsed log entries
+        std::string testPrompt = "Summarize: Failed password for admin at 08:00:00Z";
+        std::string testResponse = sendToOllama(testPrompt);
+        std::cout << "Test OLLAMA: " << testResponse << std::endl;
+
     } catch (const std::exception& e) { // Catch any exceptions thrown during parsing
         std::cerr << "Error: " << e.what() << std::endl;
         return 1;
