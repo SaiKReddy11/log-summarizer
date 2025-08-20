@@ -1,6 +1,13 @@
 # Log Summarizer Bot
 A C++ CLI tool with a web-based GUI that parses JSON syslogs, filters security-critical events, and generates summaries using OLLAMA’s llama3 model for SOC analysts.
 
+## Project Highlights
+- Automated log parsing and summarization for SOC workflows.
+- Filters high-severity events like failed logins and unauthorized access.
+- Supports console, file output, and web-based GUI with file upload.
+- Includes JSON schema validation and unit tests for reliability.
+- Demonstrates C++ modular design, API integration, and GUI development.
+
 ## Features
 - Parses JSON logs with timestamp, message, and severity fields.
 - Filters high-severity events (e.g., failed logins, unauthorized access).
