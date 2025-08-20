@@ -1,0 +1,21 @@
+Security Report:
+Here are the security-critical events summarized in easy-to-understand bullet points for immediate action:
+
+**Urgent Action Required**
+
+* Multiple failed login attempts for admin account from IP address 192.168.1.100 (4 instances)
+* Unauthorized API access attempt from IP address 203.0.113.10
+* Failed authentication for service nginx (2 instances)
+* Unauthorized access attempts on port 22 (3 instances):
+	+ From IP address 10.0.0.50
+	+ Multiple attempts from unknown sources
+
+**Immediate Actions**
+
+1. **Lock down admin account**: Restrict or reset the admin account to prevent further unauthorized access.
+2. **Block suspicious IPs**: Block IP addresses 192.168.1.100, 203.0.113.10, and 10.0.0.50 from accessing your system.
+3. **Secure API access**: Review and restrict API access to authorized users only.
+4. **Verify nginx configuration**: Check nginx configuration files for any vulnerabilities or misconfigurations.
+5. **Monitor port 22**: Continuously monitor port 22 for suspicious activity and block any further unauthorized attempts.
+
+Remember to take immediate action to prevent further compromise of your system's security.
