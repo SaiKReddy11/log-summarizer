@@ -1,0 +1,23 @@
+Security Report:
+Here are the security-critical events summarized in easy-to-understand bullet points for immediate action:
+
+**Immediacy Required**
+
+* **Failed password attempts**: Multiple failed login attempts to the admin account from IP address 192.168.1.100 within a short period of time (Severity: HIGH).
+* **Unauthorized API access**: An unauthorized attempt to access an API from IP address 203.0.113.10 (Severity: HIGH).
+* **Failed authentication for service nginx**: Failed authentication attempts for the nginx service multiple times (Severity: HIGH).
+
+**Potential Compromises**
+
+* **SSH login failure**: A failed SSH login attempt from IP address 10.0.0.50 (Severity: HIGH).
+* **Unauthorized access on port 22**: Multiple unauthorized access attempts on port 22, which is commonly used for SSH connections (Severity: HIGH).
+
+**Immediate Action Required**
+
+1. Review system logs to identify the source of these attacks.
+2. Block the IP addresses associated with these attacks using your network's firewall or IPS.
+3. Enable two-factor authentication (2FA) for all administrative accounts, including the admin account that was targeted.
+4. Change passwords for all administrative accounts to ensure they are strong and unique.
+5. Update your system's security patches and software versions to prevent exploitation of known vulnerabilities.
+
+Remember, prompt action is crucial in preventing further attacks and minimizing potential damage.
